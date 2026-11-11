@@ -1,0 +1,402 @@
+/* Academic Manuscript Format Checker - Custom Styles */
+
+/* Main Header Styling */
+.main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.main-header p {
+    margin: 10px 0 0 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+/* Score Cards */
+.score-card {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 10px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.score-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.score-card h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.score-card p {
+    margin: 8px 0 0 0;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.score-good {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border: 2px solid #28a745;
+}
+
+.score-medium {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+    border: 2px solid #ffc107;
+}
+
+.score-poor {
+    background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+    border: 2px solid #dc3545;
+}
+
+/* Issue Cards */
+.issue-card {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 12px 0;
+    border-left: 4px solid;
+    transition: transform 0.2s ease;
+}
+
+.issue-card:hover {
+    transform: translateX(5px);
+}
+
+.issue-error {
+    background: linear-gradient(135deg, #fff5f5 0%, #fee 100%);
+    border-color: #dc3545;
+}
+
+.issue-warning {
+    background: linear-gradient(135deg, #fffbf0 0%, #fff8e1 100%);
+    border-color: #ffc107;
+}
+
+.issue-info {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e3f2fd 100%);
+    border-color: #2196f3;
+}
+
+/* Rules Display */
+.rules-display {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 18px;
+    border-radius: 10px;
+    margin: 12px 0;
+    border: 1px solid #dee2e6;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comparison-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.comparison-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.comparison-table tr:hover {
+    background: #f8f9fa;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.before-cell {
+    background: #ffebee !important;
+    color: #c62828;
+    font-family: monospace;
+}
+
+.after-cell {
+    background: #e8f5e9 !important;
+    color: #2e7d32;
+    font-family: monospace;
+}
+
+/* Upload Section */
+.upload-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px dashed #dee2e6;
+    text-align: center;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.upload-section:hover {
+    border-color: #667eea;
+    background: #f8f9ff;
+}
+
+/* Progress Indicators */
+.step-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #667eea;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.step-completed {
+    background: #28a745;
+}
+
+/* Sidebar Styling */
+.sidebar .stExpander {
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Tabs Styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background: #f8f9fa;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background: #e9ecef;
+}
+
+.stTabs [aria-selected="true"] {
+    background: white !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Download Buttons */
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 500;
+}
+
+.stDownloadButton > button:hover {
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Metrics Styling */
+.stMetric {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+/* Expander Styling */
+.streamlit-expanderHeader {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Alert/Info Boxes */
+.stAlert {
+    border-radius: 10px;
+    border-left-width: 4px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: #666;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 15px;
+    }
+    
+    .main-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .score-card {
+        padding: 15px;
+    }
+    
+    .comparison-table {
+        font-size: 0.85rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 8px;
+    }
+}
+
+/* Animation for Loading States */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading {
+    animation: pulse 1.5s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+
+/* Category Badge Styles */
+.category-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 2px;
+}
+
+.badge-margins {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.badge-title {
+    background: #fce4ec;
+    color: #c2185b;
+}
+
+.badge-body {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.badge-heading {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.badge-structure {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.badge-reference {
+    background: #e0f7fa;
+    color: #00838f;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.85rem;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
