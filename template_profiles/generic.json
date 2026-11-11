@@ -1,0 +1,151 @@
+{
+  "name": "Generic",
+  "description": "Generic academic manuscript profile used when no known journal profile is detected",
+  "required_sections": [
+    "abstract",
+    "keywords",
+    "introduction",
+    "conclusion",
+    "references"
+  ],
+  "heading_patterns": [
+    "introduction",
+    "background",
+    "methodology",
+    "results",
+    "discussion",
+    "conclusion",
+    "references"
+  ],
+  "required_declarations": [],
+  "classification_patterns": {
+    "journal_header": [
+      "journal\\s+of",
+      "vol\\.\\s*\\d+",
+      "volume\\s*\\d+",
+      "eissn|pissn|issn",
+      "doi[:\\s]",
+      "https?://",
+      "www\\."
+    ],
+    "caption": [
+      "^(figure|fig\\.?|table|chart|diagram|image)\\s*\\d+"
+    ],
+    "reference": [
+      "^\\[\\d+\\]",
+      "^\\d+\\.\\s+\\w"
+    ],
+    "author_info": [
+      "orcid",
+      "corresponding\\s+author",
+      "university|universiti|faculty|fakulti|department|school|college|institute|centre|center"
+    ]
+  },
+  "rule_weights": {
+    "margins": 10,
+    "title": 15,
+    "body_text": 20,
+    "headings": 10,
+    "structure": 15,
+    "tables": 5,
+    "figures": 5,
+    "references": 10,
+    "line_spacing": 5,
+    "other": 5
+  },
+  "fallback_defaults": {
+    "font_name": "Times New Roman",
+    "body_font_size": 12,
+    "abstract_font_size": 10,
+    "reference_font_size": 10,
+    "page_size": "A4"
+  },
+  "rules": {
+    "margins": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+    },
+    "journal_header": {
+      "font_name": "Times New Roman",
+      "font_size": 12,
+      "bold": false,
+      "alignment": "CENTER"
+    },
+    "title": {
+      "font_name": "Times New Roman",
+      "font_size": 14,
+      "bold": null,
+      "italic": false,
+      "alignment": "CENTER"
+    },
+    "author": {
+      "font_name": "Times New Roman",
+      "font_size": 11,
+      "bold": false,
+      "alignment": "CENTER"
+    },
+    "affiliation": {
+      "font_name": "Times New Roman",
+      "font_size": 10,
+      "alignment": "CENTER"
+    },
+    "corresponding_author": {
+      "font_name": "Times New Roman",
+      "font_size": 10,
+      "bold": null,
+      "italic": null,
+      "alignment": null,
+      "email_required": false,
+      "orcid_required": false
+    },
+    "body": {
+      "font_name": "Times New Roman",
+      "font_size": 12,
+      "line_spacing": 1.0,
+      "alignment": null
+    },
+    "heading": {
+      "font_name": "Times New Roman",
+      "font_size": 12,
+      "bold": null,
+      "all_caps": false
+    },
+    "abstract": {
+      "font_name": "Times New Roman",
+      "font_size": 10,
+      "alignment": null,
+      "min_words": null,
+      "max_words": null,
+      "one_paragraph": null,
+      "prohibit_equations": null,
+      "prohibit_tables": null,
+      "prohibit_citations": null
+    },
+    "keywords": {
+      "font_name": "Times New Roman",
+      "font_size": 10,
+      "italic": null,
+      "min_count": null,
+      "capitalize_first_letter": null
+    },
+    "caption": {
+      "font_name": "Times New Roman",
+      "font_size": 10,
+      "italic": false
+    },
+    "reference": {
+      "font_name": "Times New Roman",
+      "font_size": 10,
+      "alignment": null,
+      "line_spacing": null,
+      "publication_italic_required": false
+    },
+    "layout": {
+      "columns": 1,
+      "page_size": "A4",
+      "orientation": null
+    }
+  }
+}
